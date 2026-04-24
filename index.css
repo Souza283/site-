@@ -1,1 +1,73 @@
-.card { dorder:10px solid salmon };
+/* Configuração geral para centralizar o card na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: 2px solid #000;
+    padding: 30px;
+    background-color: bisque;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px; /* Bordas arredondadas no card */
+    box-shadow: 10px 10px 0px #000; /* Sombra sólida estilo "neobrutalismo" */
+    max-width: 350px;
+}
+
+.topo {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo h1 {
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Garante que a foto não distorça */
+    border: 4px solid #000;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.4;
+    margin: 0;
+}
+
+button {
+    background-color: green;
+    color: bisque;
+    border: 3px solid #000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    border-radius: 10px;
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
